@@ -1,59 +1,117 @@
- *                                                                 
+#include "main.h"
 
- * Description: prints a string                                    
 
- * On success: returns no error                                    
 
- */                                                                
 
-                                                                   
 
-void _puts(char *str)                                              
 
-{                                                                  
 
-        int i = 0;                                                 
 
-                                                                   
 
-        while (*(str + i) != '\0')                                 
+#include <string.h>
 
-        {                                                          
 
-                putchar(*(str + i));                               
 
-                i++;                                               
 
-        }                                                          
 
-        putchar(10);                                               
 
-}                                                                  
 
-root@fbf02a54c483:/alx-low_level_programming/0x05-pointers_arrays_s
 
-root@fbf02a54c483:/alx-low_level_programming/0x05-pointers_arrays_s
 
-#include <stdio.h>                                                 
 
-#include <string.h>                                                
 
-#include "main.h"                                                  
 
-                                                                   
 
-/**                                                                
 
-*print_rev - Prints a string in reverse order                      
 
-*@s: String to reverse                                             
+/**
 
-*Return: Nothing                                                   
 
-*/                                                                 
 
-                                                                   
+
+
+* print_rev - string in reverse
+
+
+
+
+
+* @s: string
+
+
+
+
+
+*/
+
+
+
+
 
 void print_rev(char *s)
+
+
+
+
+
+{
+
+
+
+
+
+	int i, len;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	len = strlen(s);
+
+
+
+
+
+	for (i = len - 1; i >= 0; i--)
+
+
+
+
+
+		_putchar(s[i]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	_putchar('\n');
+
+
+
+
+
+}
+
+
 
 
